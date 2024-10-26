@@ -1,0 +1,20 @@
+[Unit]
+Description=NetFlow Collector Service
+After=network.target
+
+[Service]
+Type=simple
+User=netflow          # Replace 'netflow' with the user that should run the service
+Group=netflow         # Replace 'netflow' with the group that should run the service
+ExecStart=/path/to/netflow_collector --config=/path/to/nf_sond.ini
+Restart=on-failure
+RestartSec=5s
+
+# Optional: Set the working directory
+WorkingDirectory=/path/to/
+
+# Optional: Environment variables
+Environment=LD_LIBRARY_PATH=/usr/local/lib
+
+[Install]
+WantedBy=multi-user.target
