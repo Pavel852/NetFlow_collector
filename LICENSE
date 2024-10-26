@@ -1,6 +1,6 @@
-MIT License
+MIT License with Attribution and Improvement Sharing
 
-Copyright (c) 2024 Pavel852
+Copyright (c) 2024
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -8,6 +8,16 @@ in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
+
+1. Attribution: Any use or distribution of this software must include an attribution
+to the original author(s) as a co-author of the project or script, regardless of modifications.
+
+2. Sharing Improvements: Any modifications, upgrades, or enhancements made to this software
+must be shared with the original author by contacting [Author's Contact Information].
+
+3. Modification Notification: If any modifications are made to this software, the original
+author(s) must be informed, and the modified software must include an explicit note of the
+modifications, including a description of changes and any added functionalities.
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
@@ -19,3 +29,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+https://github.com/Pavel852/
+email: pavel.bartos.pb@gmail.com
+https://orcid.org/0009-0001-3558-4312
