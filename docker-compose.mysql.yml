@@ -1,0 +1,41 @@
+services:
+  netflow_collector:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DB_TYPE: "mysql"
+      MYSQL_HOST: mysql
+      MYSQL_PORT: 3306
+      MYSQL_USER: netflow_user
+      MYSQL_PASSWORD: netflow_password
+      MYSQL_DATABASE: netflow_db
+    volumes:
+      - ./nf_sond.ini:/app/nf_sond.ini  # Mount custom .ini configuration
+      - ./data:/data                          # Optional: Mount directory for additional data files
+    command: ["./netflow_collector", "--config=/app/nf_sond.ini"]
+    depends_on:
+      - mysql
+    networks:
+      - netflow_network
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: netflow_db
+      MYSQL_USER: netflow_user
+      MYSQL_PASSWORD: netflow_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - netflow_network
+
+volumes:
+  mysql_data:
+
+networks:
+  netflow_network:
+
