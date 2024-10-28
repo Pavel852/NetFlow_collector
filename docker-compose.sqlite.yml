@@ -1,0 +1,19 @@
+services:
+  netflow_collector:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DB_TYPE: "sqlite"
+      SQLITE_PATH: "/data/netflow_data.db"
+      CSV_PATH: "/data/netflow_data.csv"
+    volumes:
+      - ./nf_sond.ini:/app/nf_sond.ini  # Mount custom .ini configuration
+      - ./data:/data                          # Mount directory for SQLite and CSV files
+    command: ["./netflow_collector", "--config=/app/nf_sond.ini"]
+    networks:
+      - netflow_network
+
+networks:
+  netflow_network:
+
