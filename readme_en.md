@@ -36,7 +36,7 @@ NetFlow Collector is a C++ application designed for receiving, processing, and s
 ### Clone the Repository
 Clone the project repository or download the source code files:
 ```bash
-git clone https://github.com/yourusername/netflow_collector.git
+git clone https://github.com/Pavel852/netflow_collector.git
 ```
 
 ### Install Dependencies

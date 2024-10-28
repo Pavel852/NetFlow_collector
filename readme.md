@@ -36,7 +36,7 @@ NetFlow Collector je C++ aplikace navržená k přijímání, zpracování a ukl
 ### Klonování Repozitáře
 Klonujte projektový repozitář nebo stáhněte zdrojové kódy:
 ```bash
-git clone https://github.com/vaseuzivatelskejmeno/netflow_collector.git
+git clone https://github.com/Pavel852/netflow_collector.git
 ```
 
 ### Instalace Závislostí
